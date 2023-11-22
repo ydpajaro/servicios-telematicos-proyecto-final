@@ -8,8 +8,9 @@ DB_clientes = {
 }
 
 
-nombre_usuario = input('Cuenta: ')
-contrasena_usuario = getpass.getpass('Contraseña: ')
+
+# nombre_usuario = input('Cuenta: ')
+# contrasena_usuario = getpass.getpass('Contraseña: ')
 
 def autenticar_usuario(cuenta,contrasena):
     if validar_credenciales(cuenta,contrasena):
@@ -41,7 +42,7 @@ def validar_credenciales(cuenta, contrasena):
 
     # Busca el cliente en la base de datos.
     resultados = [detalle for detalle in DB_clientes.values() if detalle['cuenta'] == cuenta]
-    print(resultados)
+    # print(resultados)
 
     # Si el cliente existe, comprueba la contraseña.
     if resultados:
@@ -89,5 +90,4 @@ def decrementar_saldo(cuenta, contrasena):
 
 
 
-autenticar_usuario(nombre_usuario,contrasena_usuario)
-#incrementar_saldo(nombre_usuario,contrasena_usuario)
+# autenticar_usuario(nombre_usuario,contrasena_usuario)
