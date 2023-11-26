@@ -7,11 +7,6 @@ DB_clientes = {
     3 : {'nombre': 'Sergio Gutierrez','cuenta':'sergiogutierrez', 'contrasena': 'sergio123','saldo':80}
 }
 
-
-
-# nombre_usuario = input('Cuenta: ')
-# contrasena_usuario = getpass.getpass('Contraseña: ')
-
 def autenticar_usuario(cuenta,contrasena):
     if validar_credenciales(cuenta,contrasena):
         print(f'Bienvenido a su banca')

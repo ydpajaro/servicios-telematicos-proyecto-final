@@ -10,8 +10,10 @@ while accion != "salir":
     if accion == "1":
         nombre_usuario = input('Cuenta: ')
         contrasena_usuario = getpass.getpass('Contraseña: ')
+        
         autenticar_usuario(nombre_usuario,contrasena_usuario)
     elif accion == "2":
+        obtener_listado_licores()
         busqueda = input('Buscar: ').strip().capitalize()
         busqueda_por_producto(busqueda)
     elif accion == "3":
